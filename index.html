@@ -29,11 +29,221 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+      <div class="inputInfo">
+        <form>
+            <div class="form-row align-items-center">
+              <div class="col-auto my-1">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                <select class="custom-select mr-sm-2" id="timeInput">
+                  <option selected>Time</option>
+                  <option value="9">9:00am</option>
+                  <option value="10">10:00am</option>
+                  <option value="11">11:00am</option>
+                  <option value="12">12:00pm</option>
+                  <option value="1">1:00pm</option>
+                  <option value="2">2:00pm</option>
+                  <option value="3">3:00pm</option>
+                  <option value="4">4:00pm</option>
+                  <option value="5">5:00pm</option>
+                </select>
+              </div>
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="task">task</label>
+                    <input type="text" class="form-control" id="task" placeholder="Task">
+                  </div>
+                  <div class="col-auto">
+                      <button type="submit" class="btn btn-primary mb-2" id="sumbitBtn">Submit</button>
+                    </div>
+                </form>
+              </div>
+                <br>
+                <div class="schedule">
 
+                </div>
+      
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
+
+
+<!-- <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">9:00am</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">10:00am</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">11:00am</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">12:00pm</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">1:00pm</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">2:00pm</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">3:00pm</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div>
+
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">4:00pm</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">5:00pm</span>
+    </div>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter task"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="button"
+      id="9btn"
+    >
+      Button
+    </button>
+  </div> -->
